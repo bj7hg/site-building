@@ -1,0 +1,209 @@
+@import "mixins.scss";
+@import "variables.scss";
+#block-views-block-news-block-1{
+  text-transform: uppercase;
+  @include block-title;
+  .block-title{
+    margin-bottom: 40px;
+  }
+  .wrapper-news {
+    @include wrapper;
+    .form-group{
+      padding: 0 12px;
+    }
+    .view-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 40px;
+      .views-row {
+        max-width: 610px;
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        .views-field-fieldset {
+          .field-left {
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 20px;
+            .views-field-field-month {
+              font-size: 22px;
+            }
+            .views-field-field-day {
+              font-size: 50px;
+              color: #6e9bca;
+              font-weight: 700;
+              margin-top: -18px;
+            }
+            .views-field-field-year {
+              color: #ccc;
+              font-size: 12px;
+              margin-top: -15px;
+            }
+          }
+        }
+        .views-field-fieldset-1 {
+          .field-content {
+            .field-right {
+              .views-field-fieldset-2 {
+                .field-content {
+                  .right-top {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 20px;
+                    font-size: 10px;
+                    padding-left: 20px;
+                    border-left: 1px #ccc solid;
+                    margin-top: 20px;
+
+                    .views-field-field-user-image {
+                      width: 77px;
+                      height: 77px;
+                      margin-right: 10px;
+                    }
+
+                    .views-field-fieldset-4 {
+                      max-width: 400px;
+                      width: 100%;
+
+                      .right-profession {
+                        display: flex;
+                        flex-direction: row;
+                        .views-field-fieldset-5 {
+                          .name {
+                            display: flex;
+
+                            .views-field-field-writer-text {
+                              color: #ccc;
+                              margin-right: 4px;
+                            }
+
+                            .views-field-field-user {
+                              a {
+                                color: #000;
+
+                                &:after {
+                                  content: " /";
+                                }
+                              }
+
+                              margin-right: 4px;
+                            }
+                          }
+                        }
+
+                        .views-field-field-time-ago {
+                          margin-left: auto;
+                          margin-right: 20px;
+                          color: #cccccc;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .views-field-fieldset-3 {
+                .right-bottom {
+                  padding-right: 15px;
+                  padding-left: 20px;
+                  border-left: 1px #ccc solid;
+
+                  .views-field-field-news-main {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                  }
+
+                  .views-field-body {
+                    font-size: 10px;
+                    color: #2c2c2c;
+                    letter-spacing: -0.2px;
+                    margin-bottom: 10px;
+                  }
+
+                  .views-field-view-node {
+                    text-align: right;
+
+                    a {
+                      padding: 5px;
+                      color: #fff;
+                      background-color: #373645;
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 1300px) {
+  .main-container {
+    .row {
+      section {
+        #block-views-block-news-block-1 {
+          .wrapper-news {
+            .view-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .views-row {
+                max-width: 1000px;
+                .views-field-fieldset-1 .field-content .field-right .views-field-fieldset-2 .field-content .right-top .views-field-fieldset-4{
+                  max-width: 700px;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 600px) {
+  .main-container {
+    .row {
+      section {
+        #block-views-block-news-block-1 {
+          .wrapper-news {
+            .view-content {
+              .views-row {
+                .views-field-fieldset {
+                  .field-left {
+                    padding: 0 7px;
+                  }
+                }
+                .views-field-fieldset-1 .field-content .field-right {
+                  .views-field-fieldset-2 .field-content .right-top .views-field-fieldset-4 .right-profession {
+                    flex-direction: column;
+
+                    .views-field-fieldset-5 .name .views-field-field-user a:after {
+                      content: "";
+                    }
+
+                    .views-field {
+                      padding: 1px 0;
+                    }
+
+                    .views-field-field-time-ago {
+                      margin: 0;
+                    }
+                  }
+                  .views-field-fieldset-3 .right-bottom .views-field-field-news-main{
+                    font-size: 20px;
+                    letter-spacing: -0.5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@import "mixins.scss";
+@import "variables";
+#block-views-block-projects-block-1{
+  @include block-title;
+  padding-bottom: 50px;
+  .form-group {
+    .wrapper-projects{
+      padding-bottom: 50px;
+      @include wrapper;
+      .view-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .projects-width {
+          flex-basis: 25%;
+          display: flex;
+          justify-content: center;
+          .views-row {
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 290px;
+            background-color: white;
+            border-bottom: 1px black solid;
+            .views-field-field-project-title {
+              font-size: 23px;
+              padding: 20px 0 0 0;
+            }
+            .views-field-view-node {
+              padding-bottom: 20px;
+              .field-content {
+                background-color: #373645;
+                white-space: nowrap;
+                padding: 5px 10px;
+                a {
+                  color: white;
+                }
+              }
+            }
+          }
+        }
+      }
+      .pager-nav ul li{
+        &.is-active a{
+          background-color: $custom_light_grey;
+          border-radius: 50%;
+        }
+        a {
+          color: $custom_grey;
+          background-color: transparent;
+          border-color: transparent;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 1300px) {
+  #block-views-block-projects-block-1 .form-group .wrapper-projects .view-content{
+    display: flex;
+    .projects-width {
+      display: flex;
+      justify-content: center;
+      flex-basis: 50%;
+      padding-bottom: 30px;
+    }
+  }
+}
+@media(max-width: 700px) {
+  #block-views-block-projects-block-1 .form-group .wrapper-projects .view-content{
+    display: flex;
+    .projects-width {
+      display: flex;
+      justify-content: center;
+      flex-basis: 100%;
+      padding-bottom: 30px;
+    }
+  }
+}

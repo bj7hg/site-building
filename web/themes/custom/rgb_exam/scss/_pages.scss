@@ -1,0 +1,144 @@
+.path-services{
+  @include page-title;
+}
+.path-projects{
+  @include page-title;
+  .view-content{
+    padding-left: 0;
+    .views-field{
+      max-width: 1250px;
+    }
+  }
+}
+
+.path-team{
+  @include page-title;
+}
+.path-news{
+  @include page-title;
+  .view-content {
+    padding: 0;
+    max-width: 1250px;
+  }
+}
+.path-clients{
+  .view-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .field-content{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+.page-node-type-services{
+  .field--name-field-service-block{
+    display: flex;
+    justify-content: center;
+  }
+  .field--name-field-service-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .field--name-body{
+    text-align: center;
+  }
+}
+.path-taxonomy{
+  .is-promoted{
+    text-align: center;
+    a{
+      color:black;
+      text-decoration: none;
+      &:hover{
+        transition: transform 0.8s,box-shadow 1s;
+        box-shadow: 0 0.5em 0.5em -0.4em #000;
+        transform: translateY(-0.25em);
+      }
+    }
+  }
+  .feed-icons{
+    margin-top: 30px;
+    text-align: center;
+    a{
+      color:black;
+    }
+  }
+}
+.page-node-type-projects{
+  .img-responsive{
+    margin: 0 auto;
+  }
+  .field--name-field-project-title{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .field--name-body{
+    text-align: center;
+  }
+}
+.page-node-type-team{
+  .img-responsive{
+    margin: 0 auto;
+  }
+  .field--name-field-name{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0 10px;
+  }
+  .field--name-field-post{
+    text-align: center;
+    text-transform: uppercase;
+    color: #ccc;
+    padding-bottom: 10px;
+  }
+  .field--name-body{
+    text-align: center;
+  }
+}
+.page-node-type-news{
+  .img-responsive{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+  }
+  .field--name-field-writer-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#ccc;
+    padding-top: 7px;
+  }
+  .field--name-field-user{
+    text-align: center;
+    text-transform: uppercase;
+    a{
+      color: black;
+    }
+    padding-bottom: 20px;
+  }
+  .field--name-body{
+    text-align: center;
+  }
+}
+.page-node-type-slider{
+  .img-responsive{
+    margin: 0 auto;
+  }
+  .field--name-body{
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .path-clients{
+    .view-content{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}

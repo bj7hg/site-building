@@ -1,0 +1,59 @@
+.main-container {
+  .row {
+    section {
+      .view-id-about_{
+        .views-row {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+          text-transform: uppercase;
+          border-bottom: 5px #6e9bca solid;
+          border-top: 5px #000 solid;
+          margin-bottom: 50px;
+
+          .views-field-field-about-title {
+            margin: 0 56px 0 0;
+            font-size: 30px;
+            font-weight: 700;
+          }
+
+          .views-field-field-about-preview {
+            color: #ccc;
+            margin-right: 56px;
+            font-size: 16px;
+          }
+
+          .views-field-field-about-link {
+            font-size: 13px;
+            white-space: nowrap;
+
+            a {
+              color: #fff;
+              padding: 5px;
+              background-color: $custom_blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1250px) {
+  .main-container .row section .views-row .views-field-field-about-preview{
+            text-align: center;
+  }
+}
+@media(max-width: 682px) {
+  .main-container .row section .view-id-about_ .views-row{
+    flex-direction: column;
+    .views-field-field-about-title {
+      margin: 0;
+    }
+    .views-field-field-about-preview {
+      margin: 0 auto 20px;
+      font-size: 14px;
+      color: #9b8d8d;
+    }
+  }
+}

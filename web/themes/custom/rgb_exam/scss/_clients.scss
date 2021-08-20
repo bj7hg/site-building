@@ -1,0 +1,6 @@
+@import "mixins";
+#block-views-block-slider-block-1{
+  margin-top: 40px;
+  @include block-title;
+  margin-bottom: 100px;
+}

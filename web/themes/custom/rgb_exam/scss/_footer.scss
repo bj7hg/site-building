@@ -1,0 +1,48 @@
+.footer-wrapper{
+  background-color: $custom_purple;
+  .footer{
+    border:none;
+    .region-footer {
+      display: flex;
+      justify-content: space-between;
+      #block-logoheader-2 {
+        width: 170px;
+        height: 115px;
+        background-color: $custom_purple;
+        display: flex;
+        align-items: center;
+
+        p {
+          text-align: center;
+          margin: 0;
+
+          &.quarantine {
+            color: $custom_blue;
+            font-size: 34px;
+            line-height: 1;
+          }
+
+          &.software {
+            color: white;
+          }
+        }
+      }
+      #block-socialheader-2 {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        .field--name-field-social {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 500px) {
+  .footer-wrapper .footer .region-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

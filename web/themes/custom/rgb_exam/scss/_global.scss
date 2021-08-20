@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+@media(min-width: 1300px) {
+  .container {
+    width: 1280px;
+  }
+}
+.views-field-field-project-taxonomy{    //its for color taxonomy on the whole page
+  .field-content {
+    font-size: 14px;
+    padding-bottom: 10px;
+    a[href*="/web-taxonomy"] {
+      color: #1bbc9b;
+    }
+    a[href*="/php-taxonomy"] {
+      color: #9b58b5;
+    }
+    a[href*="/app-taxonomy"] {
+      color: #e84c3d;
+    }
+    a[href*="/drupal-taxonomy"] {
+      color: #32ade1;
+    }
+  }
+}
+.page-header{
+  text-align: center;
+  margin-bottom: 40px;
+  border: none;
+  background: linear-gradient(to right, grey 0 ,grey 100%);
+  background-position: bottom;
+  background-size: 80px 5px;
+  background-repeat: no-repeat;
+}
